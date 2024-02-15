@@ -61,16 +61,17 @@ color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
+  padding: 20px;
   width: 408px;
   height: 296px;
   margin: 0 auto;
   background-color: #fff;
-
 }
 
-.feedback-form label {
+
+.feedback-form label {  
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -91,9 +92,35 @@ label input {
     height: 40px;
 }
 
+label input:hover {
+  border: 1px solid #000;
+}
+
+
 label textarea {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
   height: 40px;
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    
+    margin-top: 16px;
+    padding: 8px 16px;
+    width: auto;
+    height: 40px;
+
+    background: #4e75ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+button:hover {
+  background: #6c8cff;
 }
