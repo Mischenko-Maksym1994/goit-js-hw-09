@@ -1,0 +1,40 @@
+li {
+    list-style: none;
+}
+
+.link-page {
+    color: black;
+}
+
+
+.gallery {
+    width: 1440px;
+    padding: 24px 156px;
+    margin: 0 auto;
+
+    background: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    padding: 0px;
+    margin-bottom: 24px;
+    flex-basis: calc(100% / 3 - 96px);
+}
+
+.gallery-item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.gallery-item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+    box-sizing: border-box;
+}
